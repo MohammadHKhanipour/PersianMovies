@@ -1,0 +1,30 @@
+﻿<Window x:Class="PersianMoviesWPFApp.Views.WConfig"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PersianMoviesWPFApp.Views"
+        mc:Ignorable="d"
+        Title="WConfig" Height="450" Width="800">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Grey.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <DockPanel FlowDirection="RightToLeft">
+        <StackPanel DockPanel.Dock="Left" Width="150" Margin="15">
+            <Button Name="BtnDirectors" Click="BtnDirectors_Click">کارگردان</Button>
+            <Button Name="BtnMovieGenres" Click="BtnMovieGenres_Click" Margin="0 5 0 0">ژانر فیلم</Button>
+        </StackPanel>
+        <Grid Name="MainGrid" Margin="15">
+            <TextBlock HorizontalAlignment="Center" FontFamily="/Content/Fonts/#IRAN Sans" FontSize="24">
+                یکی از گزینه‌های سمت راست را انتخاب کنید
+            </TextBlock>
+        </Grid>
+    </DockPanel>
+</Window>
